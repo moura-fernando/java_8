@@ -18,13 +18,14 @@ public class ExemploCursos {
 		cursos.sort(Comparator.comparing(Curso::getAlunos));
 		
 
-//		cursos.forEach(System.out::println);   //IMPRIME O toString
-//		cursos.forEach(c -> System.out.println(c.getNome())); //Prara imprimir o nome só com lambda		
+	/*	cursos.forEach(System.out::println);   //IMPRIME O toString
+		cursos.forEach(c -> System.out.println(c.getNome())); //Prara imprimir o nome só com lambda		
 		
-//		cursos.stream()
-//			.filter(c -> c.getAlunos() > 100)
-//			.forEach(c -> System.out.println(c.getNome()));
+		cursos.stream()
+			.filter(c -> c.getAlunos() > 100)
+			.forEach(c -> System.out.println(c.getNome()));*/
 		
+		//Lambda
 		cursos.stream()
 		.filter(c -> c.getAlunos() > 100)
 		.map(c -> c.getAlunos() )
